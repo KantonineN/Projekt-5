@@ -1,0 +1,93 @@
+
+/*BREADCRUMBS*/
+
+.breadcrumbs,
+.breadcrumbs * {
+  box-sizing: border-box;
+}
+
+
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: var(--scale--200);
+}
+
+
+.breadcrumbs__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: var(--scale--200);
+}
+
+
+.breadcrumbs__list-item {
+  display: flex;
+  align-items: center;
+}
+
+
+.breadcrumbs__link {
+  color: var(--color__txt__links);  
+  font-family: var(--font-family--body);
+  font-size: var(--scale--300);  
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+
+.breadcrumbs__link:hover {
+  color: var(--color__txt__links--hover);  
+}
+
+
+.breadcrumbs__list-item:not(:last-child)::after {
+  content: '/';
+  margin-left: var(--scale--200);  
+  color: var(--color__txt__primary);  
+}
+
+
+.breadcrumbs__list-item--current {
+  font-family: var(--font-family--body);  
+  font-size: var(--scale--300);  
+  font-weight: var(--font-weight--bold);  
+  color: var(--color__txt__primary);  
+}
+
+/*DIVIDER*/
+
+.divider,
+.divider * {
+  box-sizing: border-box;
+}
+
+
+.divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: var(--scale--25); 
+  width: 100%; 
+  position: relative;
+  overflow: hidden;
+  background-color: transparent; 
+}
+
+/* Dividerens linje */
+.divider__line {
+  display: block;
+  width: 100%;
+  height: var(--scale--25); 
+  background-color: var(--color__border__primary); 
+}
+
+
+.divider--horizontal .divider__line {
+  width: 100%;
+  height: var(--scale--25);  
+  background-color: var(--color__border__primary); 
+}
+
