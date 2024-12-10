@@ -246,9 +246,9 @@ a:link {
     color: var(--color__txt__links);
 }
 /* visited link */
-a:visited {
+/* a:visited {
     color: var(--color__txt__links--visited);
-}
+} */
 /* mouse over link */
 a:hover {
     color: var(--color__txt__links--hover);
@@ -546,6 +546,56 @@ input[type=date]::-webkit-calendar-picker-indicator {
 
 .avatar-caption__content p {
     margin-bottom: 0;
+}
+
+.anchorlist {
+    list-style: none;
+}
+
+.anchorlist a {
+    text-decoration: none;
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.anchorlist a:hover {
+    color: var(--color__txt__links);
+}
+
+.anchorlist a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 2rem;
+  height: 0.1em;
+  background-color: var(--color__border__primary);
+  opacity: 0;
+  transition: opacity 300ms, transform 300ms;
+  transform: translate3d(-100%, 0, 0);
+}
+
+.anchorlist a:hover::after,
+.anchorlist a:focus::after {
+  opacity: 1;
+  transform: translate3d(0, 0.2em, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
 
