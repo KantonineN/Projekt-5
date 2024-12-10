@@ -64,7 +64,10 @@
                 <symbol id="hamburger-menu" viewBox="0 0 32 32">
                     <path d="M5.33301 24H26.6663M5.33301 16H26.6663M5.33301 8H26.6663" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                 </symbol>
-                <symbol id="name" viewBox="0 0 32 32"></symbol>   
+                <symbol id="name" viewBox="0 0 32 32"></symbol>
+                <symbol id="slash" viewBox="0 0 12 12">
+                    <path d="M8.44444 1L4 11" stroke="#00454E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </symbol>   
             </svg>
         </div>
         <div class="logo">
@@ -83,18 +86,28 @@
                         <li class="breadcrumbs__list-item">
                             <a class="breadcrumbs__link" href="#">Forside</a>
                         </li>
-            
                         <li class="breadcrumbs__list-item">
-                            <a class="breadcrumbs__link" href="#">Underside</a>
+                            <svg width="10" height="10" class="slash-icon">
+                                <use href="#slash"></use>
+                            </svg>
                         </li>
-            
-                        <li class="breadcrumbs__list-item breadcrumbs__list-item--current" aria-current="page">Aktuel Side</li>
+                        <li class="breadcrumbs__list-item">
+                            <a class="breadcrumbs__link" href="#">Labs</a>
+                        </li>
+                        <li class="breadcrumbs__list-item">
+                            <svg width="10" height="10" class="slash-icon">
+                                <use href="#slash"></use>
+                            </svg>
+                        </li>
+                        <li class="breadcrumbs__list-item breadcrumbs__list-item--current" aria-current="page">Fablab</li>
                     </ul>
                 </nav>
                 <div class="divider divider--horizontal">
                     <span class="divider__line"></span>
                 </div>
             </div>
+        </div>
+        
         </div>
     </main>
     <footer></footer>
