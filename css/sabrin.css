@@ -26,11 +26,7 @@
 }
 
 .breadcrumbs__link {
-  color: var(--color__txt__links);
-  font-family: var(--font-family--body);
-  font-size: var(--scale--300);
   text-decoration: none;
-  transition: color 0.3s ease;
 }
 
 .breadcrumbs__link:hover {
