@@ -195,6 +195,7 @@ h1 {
 h2 {
     font-size: clamp(2.8rem,3.125vw,4.5rem);
     line-height: clamp(3.2rem,3.75vw,5.4rem);
+    margin-bottom: clamp(1rem, 0.8vw, 2rem);
 }
 
 h3 {
@@ -222,6 +223,10 @@ p {
     margin-bottom: 1rem;
 }
 
+.no-margin {
+    margin: 0;
+}
+
 .manchet {
     font-size: clamp(1.6rem,1.528vw,2.2rem);
     line-height: clamp(2rem,1.875vw,2.7rem);
@@ -235,6 +240,16 @@ p {
 
 .txt--bold {
     font-weight: 700;
+}
+
+.txt__area {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing--md);
+}
+
+.txt__area div {
+    width: 100%;
 }
 
 /* unvisited link */
@@ -673,12 +688,20 @@ option {
 .header {
     background: var(--color__surface__bg--dim);
     width: 100%;
+    padding-top: 35px;
+    padding-bottom: var(--spacing--sm);
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .header .row,
 .breadcrumbs-area {
     width: var(--layout__max-width--xl);
     margin: auto;
+}
+
+.header button {
+    padding: 0px var(--spacing--lg);
 }
 
 .header__top-nav {
@@ -715,17 +738,15 @@ option {
     gap: var(--spacing--xs);
 }
 
-.header hr {
-    color: var(--color__border__primary);
+video {
+    width: 100%;
+    height: auto;
 }
 
-
-
-
-
-
-
-
+.logo-img {
+    width: 200px;
+    height: auto;
+}
 
 .column__card {
     background: var(--color__surface__secondary--1);
