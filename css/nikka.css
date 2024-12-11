@@ -718,12 +718,8 @@ option {
     gap: var(--spacing--md);
 }
 
-.header .anchorlist,
-.header ul {
+.header .anchorlist {
     gap: var(--spacing--md);
-}
-
-.header ul {
     display: flex;
 }
 
@@ -736,6 +732,42 @@ option {
     flex-direction: column;
     align-items: flex-end;
     gap: var(--spacing--xs);
+}
+
+.header__dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.header .header__dropbtn {
+    padding: 0;
+    border: none;
+    background-color: inherit;
+    color: var(--color__txt__links);
+}
+
+.header__dropdown-content {
+    position: absolute;
+    display: none;
+    background-color: var(--color__surface__bg);
+    min-width: 160px;
+}
+
+.header__dropdown-content a {
+    padding: var(--spacing--xs) var(--spacing--sm);
+    border-bottom: var(--border__width--sm) solid var(--color__border__primary--variant);
+}
+
+.header__dropdown-content a:hover {
+    background-color: var(--color__surface__bg--dim);
+}
+
+.header__dropdown:hover .header__dropdown-content {
+    display: block;
+}
+
+.header__dropdown-content a:hover::after {
+    opacity: 0;
 }
 
 video {
