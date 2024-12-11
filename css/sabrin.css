@@ -48,14 +48,6 @@
   margin-left: var(--scale--200);
 }
 
-.slash-icon {
-  width: 1em; 
-  height: 1em;
-  color: var(--color__txt__links); 
-  margin-left: var(--scale--200);
-  vertical-align: middle; 
-}
-
 /* Divider */
 .divider,
 .divider * {
@@ -77,24 +69,6 @@
   height: var(--scale--25); 
   background-color: var(--color__border__primary); 
 }
-
-
-/*Card*/
-.card,
-.card * {
-  box-sizing: border-box;
-}
-
-
-.container {
-  width: 100%; 
-  max-width: 600px; 
-  margin: 0 auto; 
-  padding: var(--spacing-sm, 16px); 
-  display: flex;
-  justify-content: flex-start; 
-}
-
 
 .card {
   background: var(--color-surface-bg-dim, #e4f1f0);
