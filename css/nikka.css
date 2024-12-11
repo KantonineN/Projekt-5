@@ -750,7 +750,10 @@ video {
 
 .column__card {
     background: var(--color__surface__secondary--1);
-    padding: 16px;
+    padding: var(--spacing--md);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing--md);
 }
 
 .btn__area {
