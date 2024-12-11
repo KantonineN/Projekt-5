@@ -1,15 +1,7 @@
 
 /*Breadcrumbs*/
-
-.breadcrumbs,
-.breadcrumbs * {
-  box-sizing: border-box;
-}
-
 .breadcrumbs {
   display: flex;
-  align-items: center;
-  gap: var(--scale--100);
 }
 
 .breadcrumbs__list {
@@ -17,11 +9,7 @@
   padding: 0;
   margin: 0;
   display: flex;
-  gap: var(--scale--100);
-}
-
-.breadcrumbs__list-item {
-  display: flex;
+  gap: 4px;
 }
 
 .breadcrumbs__link {
@@ -32,21 +20,10 @@
   color: var(--color__txt__links--hover);
 }
 
-.breadcrumbs__list-item:not(:last-child) .slash {
-  margin-left: var(--scale--200);
-}
-
-/* Divider */
-.divider,
-.divider * {
-  box-sizing: border-box;
-}
-
-
 .divider {
   display: block;
   width: 100%; 
-  height: var(--scale--25);
+  height: var(--border__width--sm);
   border: none; 
   position: relative;
   overflow: hidden;
@@ -54,7 +31,6 @@
 
 /* Dividerens linje */
 .divider--horizontal {
-  height: var(--scale--25); 
   background-color: var(--color__border__primary); 
 }
 
