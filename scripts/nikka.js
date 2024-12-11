@@ -25,7 +25,7 @@ function Modal () {
         }
     }
 };
-// Modal();
+Modal();
 
 
 // Slider top start

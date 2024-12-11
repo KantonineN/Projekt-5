@@ -17,11 +17,25 @@
     ================================================== -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="scripts/header-nikka.js"></script>
-    <script src="scripts/nikka.js" defer></script>
 </head>
 <body>
     <header>
-        <div id="header-content"></div>
+        <div class="header-area">
+            <div id="header-content"></div>
+            <div class="breadcrumbs-area">
+                <nav class="breadcrumbs">
+                    <ul class="breadcrumbs__list">
+                        <li class="breadcrumbs__list-item">
+                            <a class="breadcrumbs__link" href="#">Forside</a>
+                        </li>
+                        <li class="breadcrumbs__list-item">
+                            <a class="breadcrumbs__link" href="#">Underside</a>
+                        </li>
+                        <li class="breadcrumbs__list-item--current" aria-current="page">Aktuelle side</li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </header>
     <main>
         
@@ -32,63 +46,10 @@
 
         <div class="container">
             <div class="row">
-                <form action="">
-                    <div class="col12">
-                        <label>
-                            Workshop
-                            <select id="id" required="required">
-                                <option value="0">Vælg workshop</option>
-                                <option value="1">
-                                    <p>hhhhh</p>
-                                    <p>aaaaaa</p>
-                                </option>
-                                <option value="2"></option>
-                            </select>
-                        </label>
-                    </div>
-                    <div class="col6">
-                        <label>
-                            Uddannelse
-                            <select id="id" required="required">
-                                <option value="0">Vælg uddannelse</option>
-                                <option value="1">Pædagog</option>
-                                <option value="2">Sygeplejerske</option>
-                            </select>
-                        </label>
-                        <label >
-                            Semester
-                            <select id="semester" required="required">
-                                <option value="0">Vælg semester</option>
-                                <option value="1">. Semester</option>
-                                <option value="2">. Semester</option>
-                                <option value="3">. Semester</option>
-                                <option value="4">. Semester</option>
-                                <option value="5">. Semester</option>
-                                <option value="6">. Semester</option>
-                                <option value="7">. Semester</option>
-                            </select>
-                        </label>
-                    </div>
-                    <div class="col12">
-                        <label>
-                            Fulde navn
-                            <input type="text" name="name"/>
-                        </label>
-                    </div>
-                    <div class="col6">
-                        <label >
-                            E-mail
-                            <input type="text" name="email" placeholder="eksempel@mail.dk"/>
-                        </label>
-                        <label>
-                            Telefon
-                            <input type="text" name="phone"/>
-                        </label>
-                    </div>
-                    <div class="col12">
-                        <input type="submit" value="Send">
-                    </div>
-                </form>
+                
+
+
+                
 
             </div>
         </div>

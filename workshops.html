@@ -21,9 +21,127 @@
 </head>
 <body>
     <header>
-        <div id="header-content"></div>
+        <div class="header-area">
+            <div id="header-content"></div>
+            <div class="breadcrumbs-area">
+                <nav class="breadcrumbs">
+                    <ul class="breadcrumbs__list">
+                        <li class="breadcrumbs__list-item">
+                            <a class="breadcrumbs__link" href="#">Forside</a>
+                        </li>
+                        <li class="breadcrumbs__list-item">
+                            <a class="breadcrumbs__link" href="#">Underside</a>
+                        </li>
+                        <li class="breadcrumbs__list-item--current" aria-current="page">Aktuelle side</li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </header>
-    <main></main>
+    <main>
+        <div class="container">
+            <div class="row">
+                <h1>Workshops</h1>
+                <p class="manchet">Er du klar til at slippe kreativiteten løs og lære noget nyt? 🎨⚙️</p>
+                <p class="manchet">Hos FabLab tilbyder vi workshops og kurser, der gør det sjovt og nemt at lære at bruge vores teknologiske værktøjer. Uanset om du er helt nybegynder eller klar til at tænke stort og innovativt, har vi noget for dig!</p>
+                <p class="manchet">Vi kører alt fra grundlæggende maskinkurser (tænk laserskærere og 3D-printere 🛠️) til spændende innovationsprojekter, hvor du kan samarbejde med andre studerende og udvikle de vildeste ideer. Har du noget specifikt i tankerne? Så kan vi også skræddersy kurser, der passer lige til dig eller din uddannelse.</p>
+                <p class="manchet">Lyder det som noget for dig? Så kom med - vi lover, det bliver både lærerigt og lidt sjovt! 😄</p>
+                <p class="manchet">Læs mere, og tilmeld dig her! 🚀</p>
+            </div>
+            <div class="row col">
+                <div class="col6 accordion__area">
+                    <div class="accordion">
+                        <button class="accordion__btn hl4">
+                            Laserskærer
+                           <span class="accordion__arrow"></span>
+                        </button>
+                        <div class="accordion__panel">
+                           <p>Er du klar til at skære igennem - både bogstaveligt og figurativt? Kom og vær med i vores laserskærer workshop på Fablab! Her lærer du at bruge den fede teknologi, der kan skære alt fra træ til akryl og du får hands-on erfaring med at designe dine egne projekter. Om du er ny på teknologien eller allerede har erfaring, guider vores dygtige instruktører dig igennem processen, så du kan skabe alt fra seje prototyper til kunstneriske mesterværker. Tilmeld dig nu, og lad dine ideer blive til virkelighed!</p>
+                        </div>
+                    </div>
+                    <div class="accordion">
+                        <button class="accordion__btn hl4">
+                            3D print
+                           <span class="accordion__arrow"></span>
+                        </button>
+                        <div class="accordion__panel">
+                           <p>Er du nysgerrig på 3D-printning? Så kom med til vores workshop, hvor vi viser dig, hvordan du kan designe og printe dine egne kreationer – fra de helt simple til de vildeste idéer! Vores eksperter står klar til at hjælpe dig igennem hele processen – lige fra at lave designet på computeren til at vælge det rigtige materiale og få det printet ud i 3D. Det er ligegyldigt, om du er helt ny på området eller allerede har prøvet kræfter med 3D-printning. Vi sørger for, at du får praktisk erfaring og kan gå hjem med dine egne, håndlavede 3D-objekter. Kom og vær med, og lad os hjælpe dig med at gøre dine idéer til virkelighed!</p>
+                        </div>
+                    </div>
+                    <div class="accordion">
+                        <button class="accordion__btn hl4">
+                            Tekstil tryk
+                           <span class="accordion__arrow"></span>
+                        </button>
+                        <div class="accordion__panel">
+                           <p>Er du klar til at gøre dine design-dreams til virkelighed? Kom og vær med i vores tekstiltryk workshop på Fablab! Her lærer du, hvordan du trykker dine egne designs på t-shirts, badges og meget mere – alt hvad der kan bære et tryk. Vi guider dig igennem de fede teknikker som silketryk og transfertryk, så du kan lave produkter, der virkelig skiller sig ud. Vores erfarne instruktører er med dig hele vejen, fra idé til færdigt design. Så hvorfor ikke få hænderne i gang og gøre dit tekstilprojekt helt personligt? Tilmeld dig nu og lad kreativiteten flyde!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col6">
+                    <form class="col" action="">
+                        <div class="col12">
+                            <label>
+                                Workshop
+                                <select id="workshop" required="required">
+                                    <option value="0">Vælg workshop</option>
+                                    <option value="1">
+                                    </option>
+                                    <option value="2"></option>
+                                </select>
+                            </label>
+                        </div>
+                        <div class="col6">
+                            <label>
+                                Uddannelse
+                                <select id="uddannelse" required="required">
+                                    <option value="0">Vælg uddannelse</option>
+                                    <option value="1">Pædagog</option>
+                                    <option value="2">Sygeplejerske</option>
+                                </select>
+                            </label>
+                        </div>
+                        <div class="col6">
+                            <label >
+                                Semester
+                                <select id="semester" required="required">
+                                    <option value="0">Vælg semester</option>
+                                    <option value="1">. Semester</option>
+                                    <option value="2">. Semester</option>
+                                    <option value="3">. Semester</option>
+                                    <option value="4">. Semester</option>
+                                    <option value="5">. Semester</option>
+                                    <option value="6">. Semester</option>
+                                    <option value="7">. Semester</option>
+                                </select>
+                            </label>
+                        </div>
+                        <div class="col12">
+                            <label>
+                                Fulde navn
+                                <input id="name" type="text" name="name" autocomplete="on"/>
+                            </label>
+                        </div>
+                        <div class="col6">
+                            <label >
+                                E-mail
+                                <input id="mail" type="text" name="email" placeholder="eksempel@mail.dk" autocomplete="on"/>
+                            </label>
+                        </div>
+                        <div class="col6">
+                            <label>
+                                Telefon
+                                <input id="phone" type="tel" name="phone" autocomplete="on"/>
+                            </label>
+                        </div>
+                        <div class="col12">
+                            <input type="submit" value="Send">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
     <footer></footer>
 </body>
 </html>
