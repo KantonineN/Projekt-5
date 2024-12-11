@@ -763,6 +763,10 @@ video {
     gap: var(--spacing--lg);
 }
 
+a .card {
+    text-decoration: none;
+}
+
 
 
 
