@@ -723,7 +723,9 @@ option {
 
 
 
-
+.column__card {
+    background: var(--color__surface__secondary--1);
+}
 
 
 
@@ -743,6 +745,7 @@ option {
         width: var(--layout__max-width--sm);
     }
     .col12,
+    .col8,
     .col6,
     .col4,
     .col3 {
@@ -773,7 +776,8 @@ option {
     .container {
         width: var(--layout__max-width--md);
     }
-    .col12 {
+    .col12,
+    .col8 {
         grid-column: span 12;
     }
     .col6,
@@ -810,6 +814,9 @@ option {
     }
     .col12 {
         grid-column: span 12;
+    }
+    .col8 {
+        grid-column: span 8;
     }
     .col6 {
         grid-column: span 6;
@@ -849,6 +856,9 @@ option {
     }
     .col12 {
         grid-column: span 12;
+    }
+    .col8 {
+        grid-column: span 8;
     }
     .col6 {
         grid-column: span 6;
