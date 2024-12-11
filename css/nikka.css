@@ -575,6 +575,10 @@ input[type=date]::-webkit-calendar-picker-indicator {
     margin-bottom: 0;
 }
 
+.anchor {
+    display: flex;
+}
+
 .anchorlist {
     list-style: none;
 }

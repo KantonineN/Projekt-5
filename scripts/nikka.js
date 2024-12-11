@@ -71,4 +71,4 @@ function Modal () {
         }
     }
 };
-//Modal();
+Modal();
