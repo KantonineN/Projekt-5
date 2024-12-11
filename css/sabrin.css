@@ -167,3 +167,8 @@
   position: relative;
   align-self: stretch;
 }
+
+.logo {
+  height: 100%;
+  width: auto;
+}
