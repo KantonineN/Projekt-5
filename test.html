@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="dk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="content">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="css/nikka.css">
+    <script src="scripts/header-nikka.js" defer></script>
+</head>
+<body>
+    <header></header>
+    <main>
+        <!-- Trigger/Open The Modal -->
+                        <button id="btn__booktime" class="btn--primary transition">Book tid</button>
+                        <!-- The Modal -->
+                        <div id="modal__booktime" class="modal shadow--modal">
+                            <!-- Modal content -->
+                            <div class="modal__header">
+                                <span class="modal__close">&times;</span>
+                                <h3>Forespørgsel om tidsbestilling</h3>
+                            </div>
+                            <div class="modal__body">
+                                <form action="">
+                                    <div class="col6">
+                                        <label>
+                                            Uddannelse
+                                            <select id="id" required="required">
+                                                <option value="0">Vælg uddannelse</option>
+                                                <option value="1">Pædagog</option>
+                                                <option value="2">Sygeplejerske</option>
+                                            </select>
+                                        </label>
+                                        <label >
+                                            Semester
+                                            <select id="semester" required="required">
+                                                <option value="0">Vælg semester</option>
+                                                <option value="1">. Semester</option>
+                                                <option value="2">. Semester</option>
+                                                <option value="3">. Semester</option>
+                                                <option value="4">. Semester</option>
+                                                <option value="5">. Semester</option>
+                                                <option value="6">. Semester</option>
+                                                <option value="7">. Semester</option>
+                                            </select>
+                                        </label>
+                                    </div>
+                                    <div class="col12">
+                                        <label>
+                                            Fulde navn
+                                            <input type="text" name="name"/>
+                                        </label>
+                                    </div>
+                                    <div class="col6">
+                                        <label >
+                                            E-mail
+                                            <input type="text" name="email" placeholder="eksempel@mail.dk"/>
+                                        </label>
+                                        <label>
+                                            Telefon:
+                                            <input type="text" name="phone"/>
+                                        </label>
+                                    </div>
+                                    <div class="col6">
+                                        <label>
+                                            Dato
+                                            <input type="date" name="date"/>
+                                        </label>
+                                        <label>
+                                            Tidspunkt
+                                            <select id="time" required="required">
+                                                <option value="0">Vælg klokkeslet</option>
+                                                <option value="1">Klokken 9</option>
+                                                <option value="2">Klokken 10</option>
+                                                <option value="3">Klokken 11</option>
+                                                <option value="4">Klokken 13</option>
+                                                <option value="5">Klokken 14</option>
+                                                <option value="6">Klokken 15</option>
+                                            </select>
+                                        </label>
+                                    </div>
+                                    <div class="col12">
+                                        <label>
+                                            Hvad bestiller du tid til?
+                                            <textarea id="subject" name="subject" placeholder="Laserskærer, 3D printer e.lign.
+        Skriv også hvis du har brug for vejleding eller er selvkørende." required="required" style="height:15vh"></textarea>
+                                        </label>
+                                    </div>
+                                    <div class="col12">
+                                        <input type="submit" value="Send">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+    </main>
+    <footer></footer>
+</body>
+</html>
