@@ -163,6 +163,8 @@ html, body {
 
 .row {
     width: 100%;
+    display: flex;
+    flex-direction: column;
     margin-bottom: var(--spacing--xl);
 }
 
@@ -358,13 +360,15 @@ input[type=submit] {
     border-color: var(--color__border__primary);
 }
 
-label {
+label,
+.label {
     width: 100%;
     font-size: clamp(1.4rem,1.111vw,1.6rem);
     line-height: clamp(2.1rem,1.667vw,2.4rem);
     color: var(--color__txt__primary);
     padding-bottom: 4px;
     font-weight: 700;
+    margin-bottom: 0;
 }
 
 input[type=text],
@@ -710,7 +714,7 @@ option {
 }
 
 .header button {
-    padding: 0px var(--spacing--lg);
+    padding: 0 var(--spacing--sm);
 }
 
 .header__top-nav {
@@ -743,39 +747,46 @@ option {
     gap: var(--spacing--xs);
 }
 
-.header__dropdown {
+.dropdown {
+    position: relative;
     float: left;
-    overflow: hidden;
 }
 
-.header .header__dropbtn {
-    padding: 0;
-    border: none;
+.dropdown__btn {
+    border-color: var(--color__border__primary--variant);
     background-color: inherit;
+    color: var(--color__txt__primary--variant);
+    padding: var(--spacing--xs) var(--spacing--sm);
+}
+
+.header .dropdown__btn {
+    border: none;
+    padding: 0;
     color: var(--color__txt__links);
 }
 
-.header__dropdown-content {
+.dropdown__content {
     position: absolute;
     display: none;
     background-color: var(--color__surface__bg);
     min-width: 160px;
 }
 
-.header__dropdown-content a {
+.dropdown__content a {
     padding: var(--spacing--xs) var(--spacing--sm);
     border-bottom: var(--border__width--sm) solid var(--color__border__primary--variant);
 }
 
-.header__dropdown-content a:hover {
-    background-color: var(--color__surface__bg--dim);
+.dropdown__content a:hover {
+    background-color: var(--color__surface__brand--dark);
+    color: var(--color__txt__on-brand);
 }
 
-.header__dropdown:hover .header__dropdown-content {
+.dropdown:hover .dropdown__content {
     display: block;
 }
 
-.header__dropdown-content a:hover::after {
+.dropdown__content a:hover::after {
     opacity: 0;
 }
 
