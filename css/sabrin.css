@@ -12,6 +12,10 @@
   gap: 4px;
 }
 
+.breadcrumbs__list-item {
+  display: flex;
+}
+
 .breadcrumbs__link {
   text-decoration: none;
 }
