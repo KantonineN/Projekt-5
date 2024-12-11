@@ -279,16 +279,16 @@ a:hover {
 
 /* Icons */
 .icon--sm {
-    width: 16px;
-    height: 16px;
+    width: var(--dimension__icon--sm);
+    height: var(--dimension__icon--sm);
 }
 .icon--md {
-    width: 24px;
-    height: 24px;
+    width: var(--dimension__icon--md);
+    height: var(--dimension__icon--md);
 }
 .icon--lg {
-    width: 32px;
-    height: 32px;
+    width: var(--dimension__icon--lg);
+    height: var(--dimension__icon--lg);
 }
 
 /* Grids and spacings */
@@ -750,6 +750,14 @@ video {
 
 .column__card {
     background: var(--color__surface__secondary--1);
+    padding: 16px;
+}
+
+.btn__area {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing--lg);
 }
 
 
