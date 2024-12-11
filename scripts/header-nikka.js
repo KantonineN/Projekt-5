@@ -1,7 +1,7 @@
 $(document).ready(function () {
-    $("#svg-content").load("navigation/svg.html");
+    $("#svg-content").load("injects/svg.html");
 });
 
 $(document).ready(function () {
-    $("#header-content").load("navigation/header.html");
+    $("#header-content").load("injects/header.html");
 });
