@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="dk">
+<head>
+    <!-- Title and meta description
+    ================================================== -->
+    <meta charset="UTF-8">
+    <meta name="description" content="content">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" type="text/css" href="css/nikka.css">
+    <link rel="stylesheet" type="text/css" href="proxima-nova-alt/stylesheet.css">
+
+    <!-- Scripts
+    ================================================== -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="scripts/header-nikka.js"></script>
+    <script src="scripts/nikka.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-area">
+            <div id="header-content"></div>
+            <div class="breadcrumbs-area">
+                <nav class="breadcrumbs">
+                    <ul class="breadcrumbs__list">
+                        <li class="breadcrumbs__list-item">
+                            <a class="breadcrumbs__link" href="#">Forside</a>
+                        </li>
+                        <li class="breadcrumbs__list-item">
+                            <a class="breadcrumbs__link" href="#">Underside</a>
+                        </li>
+                        <li class="breadcrumbs__list-item--current" aria-current="page">Aktuelle side</li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row col">
+                <div class="col8">
+                    <div class="row">
+                        <div id="carousel">
+                            <img class="responsive-img carousel__img carousel__transition" src="assets/images/historie.webp" alt="Historiefortelling for børn">
+                            <img class="responsive-img carousel__img carousel__transition" src="assets/images/story-telling.webp" alt="Historiefortelling for børn">
+                            <img class="responsive-img carousel__img carousel__transition" src="assets/images/fairytale-laser-cut.webp" alt="Laserskårne eventyrs figurer">
+                            <!-- Next and previous buttons -->
+                            <button class="carousel__btn carousel__btn--prev" onclick="plusSlides(-1)">
+                                <svg class="carousel__btn__icon" focusable="false" aria-hidden="true"><use xlink:href="#chevron-left"></use></svg>
+                            </button>
+                            <button class="carousel__btn carousel__btn--next" onclick="plusSlides(1)">
+                                <svg class="carousel__btn__icon" focusable="false" aria-hidden="true"><use xlink:href="#chevron-right"></use></svg>
+                            </button>
+                            <!-- The dots/circles -->
+                            <div class="carousel__wrapper__dots">
+                                <span class="carousel__dot" onclick="currentSlide(1)"></span>
+                                <span class="carousel__dot" onclick="currentSlide(2)"></span>
+                                <span class="carousel__dot" onclick="currentSlide(3)"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <h2>Eventyr og Historiefortælling med FabLab</h2>
+                        <h3 class="hl4">Pædagog - 3. Semester</h3>
+                        <p>Eventyr og Historiefortælling med FabLab Forestil dig, at du ikke bare fortæller et eventyr - men at du træder direkte ind i det. Det var præcis, hvad pædagogstuderende Maria gjorde, da hun brugte FabLab til at bringe sine historier til live. I stedet for kun at læse eventyret højt, skabte hun et helt univers af figurer, kulisser og interaktive elementer, der gjorde børns fantasi og leg til en aktiv del af historiefortællingen.</p>
+                        <p>Med FabLabs teknologi - fra 3D-printere til lasergravering - designede Maria figurer som den lille havfrue, en prins og en drage, der alle var klar til at blive en del af børnenes egen version af historien. Hun lavede små detaljerede figurer i plastik og træ, som børnene kunne røre ved og manipulere, hvilket gav dem mulighed for at skabe deres egne fortællinger og give eventyret et personligt præg.</p>
+                        <p>Men det stoppede ikke der. Maria tog sin kreativitet et skridt videre og byggede en magisk havkulisse, hvor LED-lys fik vandet til at glimte og skabe en drømmeagtig atmosfære. Ved hjælp af FabLabs lasergravering lavede hun små, detaljerede rekvisitter som muslingeskaller, slotte og fisk, som børnene kunne bruge i deres egen fortælling. Kulisserne blev levende, og eventyret kunne føles som en verden, børnene kunne træde ind i.</p>
+                        <p>Hvad der gør dette projekt ekstra særligt, er ikke kun den teknologi, der blev brugt, men hvordan det engagerede børnene på en helt ny måde. De kunne ikke bare lytte til historien - de kunne være en del af den. Børnene fik mulighed for at flytte figurerne, skabe deres egne versioner af eventyret og udvikle deres sprog og fantasi i processen. Det var ikke kun et eventyr, det var en interaktiv oplevelse, der gjorde læring sjov og engagerende.</p>
+                        <p>Projektet viste, hvordan teknologi og pædagogik kan gå hånd i hånd på måder, der styrker børns kreative udvikling. Ved at give børnene mulighed for at være en aktiv del af fortællingen, lærte de ikke bare om historier – de lærte om samarbejde, problemløsning og selvudtryk på en sjov og kreativ måde.</p>
+                        <p>Det er moderne pædagogik, hvor fantasien ikke har nogen grænser, og hvor børn lærer gennem leg, kreativitet og samarbejde. Det er magisk - og en helt ny måde at tænke læring på. 🎨✨</p>
+                    </div>
+                </div>
+                <div class="col4 column__card">test</div>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+</html>
