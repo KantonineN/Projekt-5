@@ -41,11 +41,17 @@
 .card {
   background: var(--color__surface__bg--dim);
   display: flex;
-  flex-direction: column;
   width: 100%;
   text-decoration: none;
 }
 
+.card--vertical {
+  flex-direction: column;
+}
+
+.card--horizontal {
+  flex-direction: row;
+}
 
 .card__image--21¤9 {
   width: 100%; 
