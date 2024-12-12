@@ -355,8 +355,8 @@ input[type=submit] {
 }
 
 .btn--secondary {
-    background: var(--color__surface__brand--dark);
-    color: var(--color__txt__on-brand);
+    background: var(--color__surface__bg);
+    color: var(--color__txt__primary);
     border-color: var(--color__border__primary);
 }
 
@@ -611,7 +611,8 @@ input[type=date]::-webkit-calendar-picker-indicator {
     list-style: none;
 }
 
-.anchorlist a {
+.anchorlist a,
+.dropdown a {
     text-decoration: none;
     display: block;
     position: relative;
@@ -709,12 +710,20 @@ option {
 
 .header .row,
 .breadcrumbs-area {
-    width: var(--layout__max-width--xl);
     margin: auto;
 }
 
 .header button {
     padding: 0 var(--spacing--sm);
+}
+
+.header .header__btn {
+    padding: var(--spacing--xs);
+}
+
+.header button > img {
+    width: 28px;
+    height: auto;
 }
 
 .header__top-nav {
@@ -770,6 +779,7 @@ option {
     display: none;
     background-color: var(--color__surface__bg);
     min-width: 160px;
+    z-index: 10;
 }
 
 .dropdown__content a {
@@ -863,8 +873,12 @@ a .card {
         width: 100%; /* Full width */
         height: 100%; /* Full height */
     }
-    .header--xl {
+    #header-content-xl {
         display: none;
+    }
+    .header .row,
+    .breadcrumbs-area {
+        width: var(--layout__max-width--sm);
     }
 }
 
@@ -901,8 +915,12 @@ a .card {
         width: 100%; /* Full width */
         height: 100%; /* Full height */
     }
-    .header--xl {
+    #header-content-xl {
         display: none;
+    }
+    .header .row,
+    .breadcrumbs-area {
+        width: var(--layout__max-width--md);
     }
 }
 
@@ -947,8 +965,12 @@ a .card {
         width: 50vw;
         height: auto;
     }
-    .header--xl {
+    #header-content-xl {
         display: none;
+    }
+    .header .row,
+    .breadcrumbs-area {
+        width: var(--layout__max-width--lg);
     }
 }
 
@@ -990,7 +1012,14 @@ a .card {
         width: 50vw;
         height: auto;
     }
-    .header--xl {
+    #header-content-xl {
         display: flex;
+    }
+    #header-content {
+        display: none;
+    }
+    .header .row,
+    .breadcrumbs-area {
+        width: var(--layout__max-width--xl);
     }
 }

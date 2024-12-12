@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="dk">
+<html lang="da">
 <head>
     <!-- Title and meta description
     ================================================== -->
@@ -25,6 +25,7 @@
         <div id="svg-content"></div>
         <div class="header-area">
             <div id="header-content"></div>
+            <div id="header-content-xl"></div>
             <div class="breadcrumbs-area">
                 <nav class="breadcrumbs">
                     <ul class="breadcrumbs__list">
@@ -52,7 +53,7 @@
                 <div class="col8">
                     <div class="row">
                         <p class="label">Studievalg</p>
-                        <div class="dropdown anchorlist">
+                        <div class="dropdown">
                             <button class="dropdown__btn">
                                 Pædagog
                                 <svg class="icon--md" focusable="false" aria-hidden="true"><use xlink:href="#chevron-down"></use></svg>
@@ -109,11 +110,11 @@
                         <h3>Forespørgsel om tidsbestilling</h3>
                     </div>
                     <div class="modal__body">
-                        <form class="col" action="">
+                        <form class="col">
                             <div class="col6">
                                 <label>
                                     Uddannelse
-                                    <select id="id" required="required">
+                                    <select id="uddannelse">
                                         <option value="0">Vælg uddannelse</option>
                                         <option value="1">Pædagog</option>
                                         <option value="2">Sygeplejerske</option>
@@ -123,7 +124,7 @@
                             <div class="col6">
                                 <label >
                                     Semester
-                                    <select id="semester" required="required">
+                                    <select id="semester">
                                         <option value="0">Vælg semester</option>
                                         <option value="1">1. Semester</option>
                                         <option value="2">2. Semester</option>
@@ -138,31 +139,31 @@
                             <div class="col12">
                                 <label>
                                     Fulde navn
-                                    <input type="text" name="name"/>
+                                    <input type="text" name="name">
                                 </label>
                             </div>
                             <div class="col6">
                                 <label >
                                     E-mail
-                                    <input type="text" name="email" placeholder="eksempel@mail.dk"/>
+                                    <input type="text" name="email" placeholder="eksempel@mail.dk">
                                 </label>
                             </div>
                             <div class="col6">
                                 <label>
-                                    Telefon:
-                                    <input type="text" name="phone"/>
+                                    Telefon
+                                    <input type="text" name="phone">
                                 </label>
                             </div>
                             <div class="col6">
                                 <label>
-                                    Dato:
-                                    <input type="date" name="date"/>
+                                    Dato
+                                    <input type="date" name="date">
                                 </label>
                             </div>
                             <div class="col6">
                                 <label>
-                                    Tidspunkt:
-                                    <select id="time" required="required">
+                                    Tidspunkt
+                                    <select id="time">
                                         <option value="0">Vælg klokkeslet</option>
                                         <option value="1">Klokken 9</option>
                                         <option value="2">Klokken 10</option>
@@ -193,7 +194,7 @@ Skriv også hvis du har brug for vejleding eller er selvkørende." required="req
                     <h3>Studierelaterede projekter</h3>
                     <a class="card shadow--cards" href="projekt1.html">
                         <div class="card__image--1¤1">
-                            <img src="assets/images/historie.webp" alt="Højtlæsning for børn"/>
+                            <img src="assets/images/historie.webp" alt="Højtlæsning for børn">
                         </div>
                         <div class="card__content">
                             <h4>Eventyr og Historiefortælling med FabLab</h4>
@@ -202,7 +203,7 @@ Skriv også hvis du har brug for vejleding eller er selvkørende." required="req
                     </a>
                     <a class="card shadow--cards" href="projekt2.html">
                         <div class="card__image--1¤1">
-                            <img src="assets/images/anatomi-hånd.webp" alt="3D printet hånd"/>
+                            <img src="assets/images/anatomi-hånd.webp" alt="3D printet hånd">
                         </div>
                         <div class="card__content">
                             <h4>Oplev anatomi på en helt ny måde!</h4>

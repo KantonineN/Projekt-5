@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="dk">
+<html lang="da">
 <head>
     <!-- Title and meta description
     ================================================== -->
@@ -25,6 +25,7 @@
         <div id="svg-content"></div>
         <div class="header-area">
             <div id="header-content"></div>
+            <div id="header-content-xl"></div>
             <div class="breadcrumbs-area">
                 <nav class="breadcrumbs">
                     <ul class="breadcrumbs__list">
@@ -84,22 +85,23 @@
                     </div>
                 </div>
                 <div class="col6">
-                    <form class="col" action="">
+                    <form class="col">
                         <div class="col12">
                             <label>
                                 Workshop
-                                <select id="workshop" required="required">
+                                <select id="workshop">
                                     <option value="0">Vælg workshop</option>
-                                    <option value="1">
-                                    </option>
-                                    <option value="2"></option>
+                                    <option value="1">Laserskærer d. 26/02/2025 kl. 8.15-11.30</option>
+                                    <option value="2">3D print d. 04/03/2025 kl. 12.15-15.30</option>
+                                    <option value="3">Laserskærer d. 21/03/2025 kl. 12.15-15.30</option>
+                                    <option value="4">Tekstil tryk d. 02/04/2025 kl. 8.15-11.30</option>
                                 </select>
                             </label>
                         </div>
                         <div class="col6">
                             <label>
                                 Uddannelse
-                                <select id="uddannelse" required="required">
+                                <select id="uddannelse">
                                     <option value="0">Vælg uddannelse</option>
                                     <option value="1">Pædagog</option>
                                     <option value="2">Sygeplejerske</option>
@@ -109,7 +111,7 @@
                         <div class="col6">
                             <label >
                                 Semester
-                                <select id="semester" required="required">
+                                <select id="semester">
                                     <option value="0">Vælg semester</option>
                                     <option value="1">. Semester</option>
                                     <option value="2">. Semester</option>
@@ -124,19 +126,19 @@
                         <div class="col12">
                             <label>
                                 Fulde navn
-                                <input id="name" type="text" name="name" autocomplete="on"/>
+                                <input id="name" type="text" name="name" autocomplete="on">
                             </label>
                         </div>
                         <div class="col6">
                             <label >
                                 E-mail
-                                <input id="mail" type="text" name="email" placeholder="eksempel@mail.dk" autocomplete="on"/>
+                                <input id="mail" type="text" name="email" placeholder="eksempel@mail.dk" autocomplete="on">
                             </label>
                         </div>
                         <div class="col6">
                             <label>
                                 Telefon
-                                <input id="phone" type="tel" name="phone" autocomplete="on"/>
+                                <input id="phone" type="tel" name="phone" autocomplete="on">
                             </label>
                         </div>
                         <div class="col12">
