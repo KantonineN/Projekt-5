@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="dk">
+<html lang="da">
 <head>
     <!-- Title and meta description
     ================================================== -->
@@ -11,28 +11,38 @@
     <!-- CSS
     ================================================== -->
     <link rel="stylesheet" type="text/css" href="css/nikka.css">
+    <link rel="stylesheet" type="text/css" href="css/sabrin.css">
     <link rel="stylesheet" type="text/css" href="proxima-nova-alt/stylesheet.css">
 
     <!-- Scripts
     ================================================== -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="scripts/header-nikka.js"></script>
+    <script src="scripts/header-nikka.js" defer></script>
     <script src="scripts/nikka.js" defer></script>
+    <script src="scripts/modal-nikka.js" defer></script>
 </head>
 <body>
     <header>
+        <div id="svg-content"></div>
         <div class="header-area">
             <div id="header-content"></div>
+            <div id="header-content-xl"></div>
             <div class="breadcrumbs-area">
                 <nav class="breadcrumbs">
                     <ul class="breadcrumbs__list">
                         <li class="breadcrumbs__list-item">
-                            <a class="breadcrumbs__link" href="#">Forside</a>
+                            <a class="breadcrumbs__link txt--small transition" href="#">Forside /</a>
                         </li>
                         <li class="breadcrumbs__list-item">
-                            <a class="breadcrumbs__link" href="#">Underside</a>
+                            <a class="breadcrumbs__link txt--small transition" href="#">Labs /</a>
                         </li>
-                        <li class="breadcrumbs__list-item--current" aria-current="page">Aktuelle side</li>
+                        <li class="breadcrumbs__list-item">
+                            <a class="breadcrumbs__link txt--small transition" href="index.html">FabLabs /</a>
+                        </li>
+                        <li class="breadcrumbs__list-item">
+                            <a class="breadcrumbs__link txt--small transition" href="#">Projektbank /</a>
+                        </li>
+                        <li class="breadcrumbs__list-item txt--small txt--bold" aria-current="page">Projekt01</li>
                     </ul>
                 </nav>
             </div>
@@ -72,8 +82,144 @@
                         <p>Projektet viste, hvordan teknologi og pædagogik kan gå hånd i hånd på måder, der styrker børns kreative udvikling. Ved at give børnene mulighed for at være en aktiv del af fortællingen, lærte de ikke bare om historier – de lærte om samarbejde, problemløsning og selvudtryk på en sjov og kreativ måde.</p>
                         <p>Det er moderne pædagogik, hvor fantasien ikke har nogen grænser, og hvor børn lærer gennem leg, kreativitet og samarbejde. Det er magisk - og en helt ny måde at tænke læring på. 🎨✨</p>
                     </div>
+                    <div class="row">
+                        <video controls>
+                            <source src="assets/video/pædagog.webm" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="row txt__area">
+                        <div>
+                            <h2>Praktisk information</h2>
+                            <p>Fablab er åbent alle hverdage fra kl. 08:00 - 16:00.</p>
+                        </div>
+                        <div>
+                            <p class="txt--bold no-margin">Adresse:</p>
+                            <p>Seebladsgade 1 
+                                <br>5000 Odense C.</p>
+                        </div>
+                        <div>
+                            <h3>Hvad koster det?</h3>
+                            <p>Uddannelsesprojekter er helt gratis - ja, du læste rigtigt! Til private projekter betaler du kun en lille pris for materialer. Husk, uddannelsesprojekter har altid førsteprioritet.</p>
+                        </div>
+                        <div>
+                            <h3>Hvordan kommer jeg i gang?</h3>
+                            <p>Det er nemt! Book en tid, eller kom forbi og lad vores dygtige FabLab-team hjælpe dig med alt fra teknisk vejledning til at få dine idéer til at flyve. 🛠️
+                                Så hvad venter du på? Sving forbi FabLab, og begynd din rejse mod at skabe noget helt unikt! ✌️</p>
+                        </div>
+                    </div>
+                    <div class="row btn__area">
+                        <!-- Trigger/Open The Modal -->
+                    <button id="btn__booktime" class="btn--primary transition">Bestil tid i FabLab</button>
+                    <!-- The Modal -->
+                    <div id="modal__booktime" class="modal shadow--modal">
+                    <!-- Modal content -->
+                    <div class="modal__header">
+                        <span class="modal__close">&times;</span>
+                        <h3>Forespørgsel om tidsbestilling</h3>
+                    </div>
+                    <div class="modal__body">
+                        <form class="col">
+                            <div class="col6">
+                                <label>
+                                    Uddannelse
+                                    <select id="id">
+                                        <option value="0">Vælg uddannelse</option>
+                                        <option value="1">Pædagog</option>
+                                        <option value="2">Sygeplejerske</option>
+                                    </select>
+                                </label>
+                            </div>
+                            <div class="col6">
+                                <label >
+                                    Semester
+                                    <select id="semester">
+                                        <option value="0">Vælg semester</option>
+                                        <option value="1">1. Semester</option>
+                                        <option value="2">2. Semester</option>
+                                        <option value="3">3. Semester</option>
+                                        <option value="4">4. Semester</option>
+                                        <option value="5">5. Semester</option>
+                                        <option value="6">6. Semester</option>
+                                        <option value="7">7. Semester</option>
+                                    </select>
+                                </label>
+                            </div>
+                            <div class="col12">
+                                <label>
+                                    Fulde navn
+                                    <input type="text" name="name">
+                                </label>
+                            </div>
+                            <div class="col6">
+                                <label >
+                                    E-mail
+                                    <input type="text" name="email" placeholder="eksempel@mail.dk">
+                                </label>
+                            </div>
+                            <div class="col6">
+                                <label>
+                                    Telefon
+                                    <input type="text" name="phone">
+                                </label>
+                            </div>
+                            <div class="col6">
+                                <label>
+                                    Dato
+                                    <input type="date" name="date">
+                                </label>
+                            </div>
+                            <div class="col6">
+                                <label>
+                                    Tidspunkt:
+                                    <select id="time">
+                                        <option value="0">Vælg klokkeslet</option>
+                                        <option value="1">Klokken 9</option>
+                                        <option value="2">Klokken 10</option>
+                                        <option value="3">Klokken 11</option>
+                                        <option value="4">Klokken 13</option>
+                                        <option value="5">Klokken 14</option>
+                                        <option value="6">Klokken 15</option>
+                                    </select>
+                                </label>
+                            </div>
+                            <div class="col12">
+                                <label>
+                                    Hvad bestiller du tid til?
+                                    <textarea id="subject" name="subject" placeholder="Laserskærer, 3D printer e.lign.
+Skriv også hvis du har brug for vejleding eller er selvkørende." required="required" style="height:15vh"></textarea>
+                                </label>
+                            </div>
+                            <div class="col12">
+                                <input type="submit" value="Send">
+                            </div>
+                        </form>
+                    </div>
+                    </div>
+                        <button class="btn--primary transition" onclick="window.location.href='workshops.html';">Lær hvordan Fablab virker</button>
+                    </div>
                 </div>
-                <div class="col4 column__card">test</div>
+                <div class="col4 column__card">
+                    <h3>Lignende projekter</h3>
+                    <a class="card shadow--cards" href="projekt1.html">
+                        <div class="card__image--1¤1">
+                            <img src="assets/images/historie.webp" alt="Højtlæsning for børn">
+                        </div>
+                        <div class="card__content">
+                            <h4>Eventyr og Historiefortælling med FabLab</h4>
+                            <p>Sofie, en pædagogstuderende, brugte FabLab til at gøre eventyr levende. Hun skabte 3D-printede figurer, lysende kulisser og interaktive elementer, som børnene kunne lege med. Det boostede både deres fantasi og sprog. Et projekt, der viser, hvordan teknologi kan gøre historiefortælling magisk! ✨</p>
+                        </div>
+                    </a>
+                    <a class="card shadow--cards" href="projekt2.html">
+                        <div class="card__image--1¤1">
+                            <img src="assets/images/anatomi-hånd.webp" alt="3D printet hånd">
+                        </div>
+                        <div class="card__content">
+                            <h4>Oplev anatomi på en helt ny måde!</h4>
+                            <p>Mød Camilla, en sygeplejerskestuderende, der gør anatomi sjov og nemt at forstå med 3D-modeller skabt i FabLab. Glem kedelige bøger – her får du hands-on læring, der gør selv de sværeste koncepter lettere at forstå, både for studerende og patienter.</p>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
     </main>

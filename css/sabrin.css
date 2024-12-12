@@ -1,0 +1,84 @@
+
+/*Breadcrumbs*/
+.breadcrumbs {
+  display: flex;
+}
+
+.breadcrumbs__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 4px;
+}
+
+.breadcrumbs__list-item {
+  display: flex;
+}
+
+.breadcrumbs__link {
+  text-decoration: none;
+}
+
+.breadcrumbs__link:hover {
+  color: var(--color__txt__links--hover);
+}
+
+.divider {
+  display: block;
+  width: 100%; 
+  height: var(--border__width--sm);
+  border: none; 
+  position: relative;
+  overflow: hidden;
+}
+
+/* Dividerens linje */
+.divider--horizontal {
+  background-color: var(--color__border__primary); 
+}
+
+.card {
+  background: var(--color__surface__bg--dim);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-decoration: none;
+}
+
+
+.card__image--21¤9 {
+  width: 100%; 
+  aspect-ratio: 21/9;; 
+  overflow: hidden;
+}
+
+.card__image--16¤9 {
+  width: 100%; 
+  aspect-ratio: 16/9;; 
+  overflow: hidden;
+}
+
+.card__image--1¤1 {
+  width: 100%; 
+  aspect-ratio: 1/1;; 
+  overflow: hidden;
+}
+
+.card img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card__content {
+  padding: var(--spacing--md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing--sm);
+}
+
+.logo {
+  height: 100%;
+  width: auto;
+}
