@@ -75,7 +75,7 @@
     --color__surface__bg: var(--color__base--1);
     --color__surface__bg--dim: var(--color__base--2);
     --color__surface__error: var(--color__signal--4);
-    --color__surface__seccess: var(--color__signal--2);
+    --color__surface__success: var(--color__signal--2);
     --color__surface__signal: var(--color__signal--1);
     --color__surface__disabled: var(--color__base--3);
 
@@ -612,12 +612,15 @@ input[type=date]::-webkit-calendar-picker-indicator {
     list-style: none;
 }
 
-.anchorlist a,
-.dropdown a {
+a {
     text-decoration: none;
     display: block;
     position: relative;
     overflow: hidden;
+}
+
+.anchorlist a,
+.dropdown a {
     padding-bottom: 2px;
 }
 
@@ -830,6 +833,48 @@ a .card {
     text-decoration: none;
 }
 
+.filter-area {
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.filter {
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    background-color: var(--color__surface__secondary--2);
+    overflow-x: hidden;
+    padding: var(--spacing--sm);
+    min-width: 0px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#filter-project {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing--md)
+}
+
+.filter__btn {
+    padding: var(--spacing--sm);
+}
+
+.filter__closebtn {
+    position: absolute;
+    top: var(--spacing--sm);
+    right: var(--spacing--sm);
+    font-size: 36px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.filter__footer button {
+    width: 100%;
+}
+
 
 
 
@@ -881,6 +926,14 @@ a .card {
     .breadcrumbs-area {
         width: var(--layout__max-width--sm);
     }
+    .filter-area {
+        justify-content: flex-end;
+    }
+    
+    .filter {
+        right: 0;
+        left:auto;
+    }
 }
 
 /* Medium device */
@@ -922,6 +975,14 @@ a .card {
     .header .row,
     .breadcrumbs-area {
         width: var(--layout__max-width--md);
+    }
+    .filter-area {
+        justify-content: flex-end;
+    }
+    
+    .filter {
+        right: 0;
+        left:auto;
     }
 }
 
@@ -973,6 +1034,14 @@ a .card {
     .breadcrumbs-area {
         width: var(--layout__max-width--lg);
     }
+    .filter-area {
+        justify-content: start;
+    }
+    
+    .filter {
+        left: 0;
+        right: auto;
+    }
 }
 
 /* X-large device */
@@ -1022,5 +1091,13 @@ a .card {
     .header .row,
     .breadcrumbs-area {
         width: var(--layout__max-width--xl);
+    }
+    .filter-area {
+        justify-content: start;
+    }
+    
+    .filter {
+        left: 0;
+        right: auto;
     }
 }

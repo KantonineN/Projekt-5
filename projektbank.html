@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <!-- Title and meta description
+    ================================================== -->
+    <meta charset="UTF-8">
+    <meta name="description" content="content">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" type="text/css" href="css/nikka.css">
+    <link rel="stylesheet" type="text/css" href="css/sabrin.css">
+    <link rel="stylesheet" type="text/css" href="proxima-nova-alt/stylesheet.css">
+
+    <!-- Scripts
+    ================================================== -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="scripts/header-nikka.js"></script>
+    <script src="scripts/sabrin.js" defer></script>
+</head>
+<body>
+    <header>
+        <div id="svg-content"></div>
+        <div class="header-area">
+            <div id="header-content"></div>
+            <div id="header-content-xl"></div>
+            <div class="breadcrumbs-area">
+                <nav class="breadcrumbs">
+                    <ul class="breadcrumbs__list">
+                        <li class="breadcrumbs__list-item">
+                            <a class="breadcrumbs__link txt--small transition" href="#">Forside /</a>
+                        </li>
+                        <li class="breadcrumbs__list-item">
+                            <a class="breadcrumbs__link txt--small transition" href="#">Labs /</a>
+                        </li>
+                        <li class="breadcrumbs__list-item txt--small txt--bold" aria-current="page">FabLab</li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row col">
+                <div class="col8">
+                    <div class="row filter-area">
+                        <button class="filter__btn btn--secondary" onclick="OpenFilter()">
+                            <svg class="icon--md" focusable="false" aria-hidden="true"><use xlink:href="#filter"></use></svg>
+                        </button>
+                        <div id="myfilter" class="filter transition">
+                            <div class="filter__content">
+                                <a href="javascript:void(0)" class="filter__closebtn" onclick="CloseFilter()">&times;</a>
+                                <form id="filter-project">
+                                    <h2>Filter</h2>
+                                    <select id="edit-studie" class="table-filter" name="studie">
+                                        <option value="all" selected>Vælg studieretning</option>
+                                        <option value="Pædagog">Pædagog</option>
+                                        <option value="Sygeplejerske">Sygeplejerske</option>
+                                    </select>
+                                    <select id="edit-teknologi" class="table-filter" name="teknologi">
+                                        <option value="all" selected>Vælg teknologi</option>
+                                        <option value="3D print">3D print</option>
+                                        <option value="Laserskærer">Laserskærer</option>
+                                        <option value="Tekstil tryk">Tekstil tryk</option>
+                                    </select>
+                                </form>
+                            </div>
+                            <div class="filter__footer">
+                                <button class="btn--primary" onclick="FilterProjects()">Tilføj filter</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <h1>Projekt bank</h1>
+                        <p class="manchet">Her præsenteres projekter, som studerende tidligere har lavet i FabLab. Du er velkommen til at udforske dem frit. Hvis du leder efter noget specifikt, kan du bruge filtrene for at finde relevante projekter hurtigt og nemt.</p>
+                    </div>
+                    <div class="row">
+                        <a class="card card--horizontal shadow--cards" href="projekt1.html">
+                            <div class="card__image--1¤1">
+                                <img src="assets/images/historie.webp" alt="Højtlæsning for børn">
+                            </div>
+                            <div class="card__content">
+                                <div>
+                                    <h4>Eventyr og Historiefortælling med FabLab</h4>
+                                    <p>
+                                        <span class="studie txt--bold">Pædagog</span>
+                                        <span class="txt--bold"> - </span>
+                                        <span class="teknologi txt--bold">3D print, laserskærer</span>
+                                    </p>
+                                </div>
+                                <p>Sofie, en pædagogstuderende, brugte FabLab til at gøre eventyr levende. Hun skabte 3D-printede figurer, lysende kulisser og interaktive elementer, som børnene kunne lege med. Det boostede både deres fantasi og sprog. Et projekt, der viser, hvordan teknologi kan gøre historiefortælling magisk! ✨</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="row">
+                        <a class="card card--horizontal shadow--cards" href="projekt2.html">
+                            <div class="card__image--1¤1">
+                                <img src="assets/images/anatomi-hånd.webp" alt="3D printet hånd">
+                            </div>
+                            <div class="card__content">
+                                <div>
+                                    <h4>Oplev anatomi på en helt ny måde!</h4>
+                                    <div class="card__subtitle">
+                                        <p>
+                                            <span class="studie txt--bold">Sygeplejerske</span>
+                                            <span class="txt--bold"> - </span>
+                                            <span class="teknologi txt--bold">3D print</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <p>Mød Camilla, en sygeplejerskestuderende, der gør anatomi sjov og nemt at forstå med 3D-modeller skabt i FabLab. Glem kedelige bøger - her får du hands-on læring, der gør selv de sværeste koncepter lettere at forstå, både for studerende og patienter.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col4-1 column__card">
+                    <div class="avatar-caption">
+                        <div class="avatar">
+                            <img src="assets/avatar_images/michael.webp" alt="Avatar">
+                        </div>
+                        <div class="avatar-caption__content">
+                            <div>
+                                <p class="txt--bold">Michael Angelo Johansen</p>
+                                <p>Fablab Manager</p>
+                            </div>
+                            <div>
+                                <a  class="txt--bold" href="tel:40878129">40 87 81 29</a>
+                                <a class="txt--bold" href="mailto:micj@ucl.dk">micj@ucl.dk</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="avatar-caption">
+                        <div class="avatar">
+                            <img src="assets/avatar_images/michael2.webp" alt="Avatar">
+                        </div>
+                        <div class="avatar-caption__content">
+                            <div>
+                                <p class="txt--bold">Michael (Efternavn)</p>
+                                <p>stilling</p>
+                            </div>
+                            <div>
+                                <p class="txt--bold">Mail</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="avatar-caption">
+                        <div class="avatar">
+                            <img src="assets/avatar_images/mads.webp" alt="Avatar">
+                        </div>
+                        <div class="avatar-caption__content">
+                            <div>
+                                <p class="txt--bold">Mads Nygaard</p>
+                                <p>FabLab tekniker</p>
+                            </div>
+                            <div>
+                                <p class="txt--bold">Mail</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+</html>
