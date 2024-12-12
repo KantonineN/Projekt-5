@@ -1,20 +1,18 @@
-// Hent alle accordion-knapperne i sektionen
-document.querySelectorAll('.accordion__btn').forEach(button => {
-    button.addEventListener('click', () => {
-        // Toggle status på den valgte accordion
-        const panel = button.nextElementSibling;
-        const isActive = panel.style.maxHeight;
+const acc = document.getElementsByClassName("accordion");
 
-        // Luk alle paneler
-        document.querySelectorAll('.accordion__panel').forEach(p => {
-            p.style.maxHeight = null;
-            p.parentElement.classList.remove('active');
-        });
+for (let i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        
+        const panel = this.nextElementSibling;
+        const arrow = this.querySelector("accordion_arrow");
 
-        // Hvis panelet ikke allerede er aktivt, åbn det
-        if (!isActive) {
-            panel.style.maxHeight = panel.scrollHeight + 'px';
-            button.parentElement.classList.add('active');
+        if (panel.classList.contains("open")) {
+            panel.classList.remove("open");
+            arrow.style.transform = "rotate(-45deg)";
+        } else {
+            panel.classList.add("open");
+            arrow.style.transform = "rotate(45deg)"; 
         }
     });
-});
+}
