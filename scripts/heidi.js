@@ -5,7 +5,7 @@ for (let i = 0; i < acc.length; i++) {
         this.classList.toggle("active");
         
         const panel = this.nextElementSibling;
-        const arrow = this.querySelector("accordion_arrow");
+        const arrow = this.querySelector(".accordion__arrow");
 
         if (panel.classList.contains("open")) {
             panel.classList.remove("open");
