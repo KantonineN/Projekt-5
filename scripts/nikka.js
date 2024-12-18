@@ -13,8 +13,6 @@ function currentSlide(n) {
 }
 
 function showSlides(n) {
-    // Variabel der holder styr på hvilket billede der vises
-    let i;
 
     const images = document.getElementsByClassName("carousel__img");
     const dots = document.getElementsByClassName("carousel__dot");
@@ -30,12 +28,12 @@ function showSlides(n) {
     }
 
     // Looper gennem imagges array og skjuler alle elementerne
-    for (i = 0; i < images.length; i++) {
+    for (let i = 0; i < images.length; i++) {
         images[i].style.display = "none";
     }
 
     // Fjerner active klassen fra alle dots
-    for (i = 0; i < dots.length; i++) {
+    for (let i = 0; i < dots.length; i++) {
         dots[i].classList.remove("carousel__dot--active");
     }
 
