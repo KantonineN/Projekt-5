@@ -25,4 +25,4 @@ function Modal () {
         }
     }
 };
-Modal();
+/* Modal(); */

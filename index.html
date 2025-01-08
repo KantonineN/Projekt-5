@@ -115,8 +115,9 @@
                 <p>Drømmer du om at gøre dine idéer til virkelighed? 🚀 Så er FabLab stedet for dig! Her finder du et kreativt legeplads-laboratorium fyldt med alt fra 3D-printere og laser cuttere til tekstilprintere og meget mere. Det er her, hvor tanker bliver til ting - og hvor du kan eksperimentere, skabe og lære.
                     FabLab er skabt til dig som studerende, så du kan udvikle prototyper og produkter, der både booster din faglige viden og tænder gnisten for innovation. Uanset om du nørder fysiske dimser eller digitale løsninger, er FabLab stedet, hvor idéer bliver til virkelighed.✨</p>
             </div>
-            <div class="row col">
-                <div class="col4-1">
+            <!-- 3 Cards -->
+            <section class="row col">
+                <article class="col4-1">
                     <a class="card card--vertical shadow--cards" href="workshops.html">
                         <div class="card__image--21¤9">
                             <img src="assets/images/workshops.webp" alt="Studerende der kigger på en 3D printer mens den arbejder">
@@ -125,8 +126,8 @@
                             <h4>Workshops</h4>
                         </div>
                     </a>
-                </div>
-                <div class="col4">
+                </article>
+                <article class="col4">
                     <a class="card card--vertical shadow--cards" href="#">
                         <div class="card__image--21¤9">
                             <img src="assets/images/fablab_for_dit_studie.webp" alt="Studerende der kigger på en 3D printer mens den arbejder">
@@ -135,8 +136,8 @@
                             <h4>FabLab for dit studie</h4>
                         </div>
                     </a>
-                </div>
-                <div class="col4">
+                </article>
+                <article class="col4">
                     <a class="card card--vertical shadow--cards" href="projektbank.html">
                         <div class="card__image--21¤9">
                             <img src="assets/images/projektbank.webp" alt="Studerende der kigger på en 3D printer mens den arbejder">
@@ -145,35 +146,39 @@
                             <h4>Projektbank</h4>
                         </div>
                     </a>
+                </article>
+            </section>
+            <!-- Useful information -->
+            <section>
+                <div class="row">
+                    <h2>Hvem kan bruge FabLab</h2>
+                    <p>Er du studerende eller underviser på UCL? Så er FabLab din legeplads! Her får du adgang til alt det fede udstyr og teknologi, du behøver for at bringe dine idéer til live – uanset om du drømmer om at lave en prototype, designe et 3D-objekt eller eksperimentere med tekstil. FabLab er stedet, hvor du kan udfolde din kreativitet, udvikle nye færdigheder og have det sjovt undervejs. Kom forbi, og lad dine projekter blive til virkelighed!</p>
                 </div>
-            </div>
-            <div class="row">
-                <h2>Hvem kan bruge FabLab</h2>
-                <p>Er du studerende eller underviser på UCL? Så er FabLab din legeplads! Her får du adgang til alt det fede udstyr og teknologi, du behøver for at bringe dine idéer til live – uanset om du drømmer om at lave en prototype, designe et 3D-objekt eller eksperimentere med tekstil. FabLab er stedet, hvor du kan udfolde din kreativitet, udvikle nye færdigheder og have det sjovt undervejs. Kom forbi, og lad dine projekter blive til virkelighed!</p>
-            </div>
-            <div class="row txt__area">
-                <div>
-                    <h2>Praktisk information</h2>
-                    <p>Fablab er åbent alle hverdage fra kl. 08:00 - 16:00.</p>
+                <div class="row txt__area">
+                    <div>
+                        <h2>Praktisk information</h2>
+                        <p>Fablab er åbent alle hverdage fra kl. 08:00 - 16:00.</p>
+                    </div>
+                    <div>
+                        <p class="txt--bold no-margin">Adresse:</p>
+                        <p>Seebladsgade 1 
+                            <br>5000 Odense C.</p>
+                    </div>
+                    <div>
+                        <h3>Hvad koster det?</h3>
+                        <p>Uddannelsesprojekter er helt gratis - ja, du læste rigtigt! Til private projekter betaler du kun en lille pris for materialer. Husk, uddannelsesprojekter har altid førsteprioritet.</p>
+                    </div>
+                    <div>
+                        <h3>Hvordan kommer jeg i gang?</h3>
+                        <p>Det er nemt! Book en tid, eller kom forbi og lad vores dygtige FabLab-team hjælpe dig med alt fra teknisk vejledning til at få dine idéer til at flyve. 🛠️
+                            Så hvad venter du på? Sving forbi FabLab, og begynd din rejse mod at skabe noget helt unikt! ✌️</p>
+                    </div>
                 </div>
-                <div>
-                    <p class="txt--bold no-margin">Adresse:</p>
-                    <p>Seebladsgade 1 
-                        <br>5000 Odense C.</p>
-                </div>
-                <div>
-                    <h3>Hvad koster det?</h3>
-                    <p>Uddannelsesprojekter er helt gratis - ja, du læste rigtigt! Til private projekter betaler du kun en lille pris for materialer. Husk, uddannelsesprojekter har altid førsteprioritet.</p>
-                </div>
-                <div>
-                    <h3>Hvordan kommer jeg i gang?</h3>
-                    <p>Det er nemt! Book en tid, eller kom forbi og lad vores dygtige FabLab-team hjælpe dig med alt fra teknisk vejledning til at få dine idéer til at flyve. 🛠️
-                        Så hvad venter du på? Sving forbi FabLab, og begynd din rejse mod at skabe noget helt unikt! ✌️</p>
-                </div>
-            </div>
-            <div class="row btn__area">
-                <!-- Trigger/Open The Modal -->
-            <button id="btn__booktime" class="btn--primary transition">Bestil tid i FabLab</button>
+                <div class="row btn__area">
+                    <!-- Trigger/Open The Modal -->
+                <button id="btn__booktime" class="btn--primary transition">Bestil tid i FabLab</button>
+                <button class="btn--primary transition" onclick="window.location.href='workshops.html';">Lær hvordan Fablab virker</button>
+            </section>
             <!-- The Modal -->
             <div id="modal__booktime" class="modal shadow--modal">
             <!-- Modal content -->
@@ -257,9 +262,6 @@ Skriv også hvis du har brug for vejleding eller er selvkørende." required="req
                         <input type="submit" value="Send">
                     </div>
                 </form>
-            </div>
-            </div>
-                <button class="btn--primary transition" onclick="window.location.href='workshops.html';">Lær hvordan Fablab virker</button>
             </div>
         </div>
     </main>
