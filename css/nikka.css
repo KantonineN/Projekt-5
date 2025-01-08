@@ -168,8 +168,8 @@ html, body {
     margin-bottom: var(--spacing--xl);
 }
 
-#header-content-xl {
-        display: none;
+.header-xl {
+    display: none;
 }
 
 .hide {
@@ -914,7 +914,7 @@ a .card {
     height: 100%; /* Full height */
 }
 
-#header-content-xl {
+.header-xl {
     display: none;
 }
 
@@ -996,7 +996,7 @@ a .card {
         width: 100%; /* Full width */
         height: 100%; /* Full height */
     }
-    #header-content-xl {
+    .header-xl {
         display: none;
     }
     .header .row,
@@ -1054,7 +1054,7 @@ a .card {
         width: 50vw;
         height: auto;
     }
-    #header-content-xl {
+    .header-xl {
         display: none;
     }
     .header .row,
@@ -1113,10 +1113,10 @@ a .card {
         width: 50vw;
         height: auto;
     }
-    #header-content-xl {
+    .header-xl {
         display: flex;
     }
-    #header-content {
+    .header-device {
         display: none;
     }
     .header .row,

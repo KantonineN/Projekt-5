@@ -11,7 +11,10 @@ $(document).ready(function () {
     $("#header-content-xl").load("injects/header-xl.html");
 });
 $(document).ready(function () {
-    $("#header-content-xl").load("../injects/header-xl--sub.html");
+    $("#header-content-xl--studie").load("../injects/header-xl--studie.html");
+});
+$(document).ready(function () {
+    $("#header-content-xl--projekt").load("../injects/header-xl--projekt.html");
 });
 
 /* Load header for devices */
@@ -19,5 +22,8 @@ $(document).ready(function () {
     $("#header-content").load("injects/header.html");
 });
 $(document).ready(function () {
-    $("#header-content").load("../injects/header--sub.html");
+    $("#header-content--studie").load("../injects/header--studie.html");
+});
+$(document).ready(function () {
+    $("#header-content--projekt").load("../injects/header--projekt.html");
 });
