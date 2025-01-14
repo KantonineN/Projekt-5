@@ -1,3 +1,5 @@
+/* <!-- Programmeret af Nikka --> */
+
 /* Load SVG's */
 $(document).ready(function () {
     $("#svg-content").load("injects/svg.html");

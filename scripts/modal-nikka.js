@@ -1,3 +1,5 @@
+/* <!-- Programmeret af Nikka --> */
+
 function Modal () {
     // Get the modal
     const modal = document.getElementById("modal__booktime");

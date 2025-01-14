@@ -1,3 +1,4 @@
+/* <!-- Programmeret af Sabrin --> */
 
 /*Breadcrumbs*/
 .breadcrumbs {
@@ -36,52 +37,6 @@
 /* Dividerens linje */
 .divider--horizontal {
   background-color: var(--color__border__primary); 
-}
-
-.card {
-  background: var(--color__surface__bg--dim);
-  display: flex;
-  width: 100%;
-  text-decoration: none;
-}
-
-.card--vertical {
-  flex-direction: column;
-}
-
-.card--horizontal {
-  flex-direction: row;
-}
-
-.card__image--21¤9 {
-  width: 100%; 
-  aspect-ratio: 21/9;; 
-  overflow: hidden;
-}
-
-.card__image--16¤9 {
-  width: 100%; 
-  aspect-ratio: 16/9;; 
-  overflow: hidden;
-}
-
-.card__image--1¤1 {
-  width: 100%; 
-  aspect-ratio: 1/1;; 
-  overflow: hidden;
-}
-
-.card img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-
-.card__content {
-  padding: var(--spacing--md);
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacing--sm);
 }
 
 .logo {
@@ -139,6 +94,7 @@
   border-radius: var(--border__radius--sm);
 }
 
+/* Sabrin du referer til primitives i stedet for tokens som det er meningen */
 .accordion-question-wrapper-body {
   display: none;
   flex-direction: column;

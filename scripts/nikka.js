@@ -1,3 +1,5 @@
+/* <!-- Programmeret af Nikka --> */
+
 // Slider top start
 let slideIndex = 1;
 showSlides(slideIndex);

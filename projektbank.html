@@ -1,3 +1,5 @@
+<!-- Programmeret af Nikka -->
+ 
 <!DOCTYPE html>
 <html lang="da">
 <head>
@@ -6,7 +8,7 @@
     <meta charset="UTF-8">
     <meta name="description" content="content">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>Projektbank</title>
 
     <!-- CSS
     ================================================== -->
@@ -24,8 +26,8 @@
     <header>
         <div id="svg-content"></div>
         <div class="header-area">
-            <div id="header-content"></div>
-            <div id="header-content-xl"></div>
+            <div id="header-content" class="header-device"></div>
+            <div id="header-content-xl" class="header-xl"></div>
             <div class="breadcrumbs-area">
                 <nav class="breadcrumbs">
                     <ul class="breadcrumbs__list">
@@ -42,13 +44,13 @@
         </div>
     </header>
     <main>
-        <div class="container">
-            <div class="row col">
-                <div class="col8">
-                    <div class="row filter-area">
-                        <button class="filter__btn btn--secondary" onclick="OpenFilter()">
-                            <svg class="icon--md" focusable="false" aria-hidden="true"><use xlink:href="#filter"></use></svg>
-                        </button>
+        <div class="container col spacing">
+            <section class="col8 spacing">
+                <div class="filter-area">
+                    <button class="filter__btn btn--secondary" onclick="OpenFilter()">
+                        <svg class="icon--md" focusable="false" aria-hidden="true"><use xlink:href="#filter"></use></svg>
+                    </button>
+                    <div>
                         <div id="myfilter" class="filter transition">
                             <div class="filter__content">
                                 <a href="javascript:void(0)" class="filter__closebtn" onclick="CloseFilter()">&times;</a>
@@ -72,95 +74,95 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <h1>Projekt bank</h1>
-                        <p class="manchet">Her præsenteres projekter, som studerende tidligere har lavet i FabLab. Du er velkommen til at udforske dem frit. Hvis du leder efter noget specifikt, kan du bruge filtrene for at finde relevante projekter hurtigt og nemt.</p>
-                    </div>
-                    <div class="row">
-                        <a class="card card--horizontal shadow--cards" href="projekt1.html">
-                            <div class="card__image--1¤1">
-                                <img src="assets/images/historie.webp" alt="Højtlæsning for børn">
+                </div>
+                <div>
+                    <h1>Projekt bank</h1>
+                    <p class="manchet">Her præsenteres projekter, som studerende tidligere har lavet i FabLab. Du er velkommen til at udforske dem frit. Hvis du leder efter noget specifikt, kan du bruge filtrene for at finde relevante projekter hurtigt og nemt.</p>
+                </div>
+                <article>
+                    <a class="card card--responsive shadow--cards" href="projekt/projekt1.html">
+                        <div class="card__img--1¤1">
+                            <img src="assets/images/historie.webp" alt="Højtlæsning for børn"  loading="lazy">
+                        </div>
+                        <div class="card__content">
+                            <div>
+                                <h4>Eventyr og Historiefortælling med FabLab</h4>
+                                <p>
+                                    <span class="studie txt--bold">Pædagog</span>
+                                    <span class="txt--bold"> - </span>
+                                    <span class="teknologi txt--bold">3D print, laserskærer</span>
+                                </p>
                             </div>
-                            <div class="card__content">
-                                <div>
-                                    <h4>Eventyr og Historiefortælling med FabLab</h4>
+                            <p>Sofie, en pædagogstuderende, brugte FabLab til at gøre eventyr levende. Hun skabte 3D-printede figurer, lysende kulisser og interaktive elementer, som børnene kunne lege med. Det boostede både deres fantasi og sprog. Et projekt, der viser, hvordan teknologi kan gøre historiefortælling magisk! ✨</p>
+                        </div>
+                    </a>
+                </article>
+                <article>
+                    <a class="card card--responsive shadow--cards" href="projekt/projekt2.html">
+                        <div class="card__img--1¤1">
+                            <img src="assets/images/anatomi-hånd.webp" alt="3D printet hånd">
+                        </div>
+                        <div class="card__content">
+                            <div>
+                                <h4>Oplev anatomi på en helt ny måde!</h4>
+                                <div class="card__subtitle">
                                     <p>
-                                        <span class="studie txt--bold">Pædagog</span>
+                                        <span class="studie txt--bold">Sygeplejerske</span>
                                         <span class="txt--bold"> - </span>
-                                        <span class="teknologi txt--bold">3D print, laserskærer</span>
+                                        <span class="teknologi txt--bold">3D print</span>
                                     </p>
                                 </div>
-                                <p>Sofie, en pædagogstuderende, brugte FabLab til at gøre eventyr levende. Hun skabte 3D-printede figurer, lysende kulisser og interaktive elementer, som børnene kunne lege med. Det boostede både deres fantasi og sprog. Et projekt, der viser, hvordan teknologi kan gøre historiefortælling magisk! ✨</p>
                             </div>
-                        </a>
-                    </div>
-                    <div class="row">
-                        <a class="card card--horizontal shadow--cards" href="projekt2.html">
-                            <div class="card__image--1¤1">
-                                <img src="assets/images/anatomi-hånd.webp" alt="3D printet hånd">
-                            </div>
-                            <div class="card__content">
-                                <div>
-                                    <h4>Oplev anatomi på en helt ny måde!</h4>
-                                    <div class="card__subtitle">
-                                        <p>
-                                            <span class="studie txt--bold">Sygeplejerske</span>
-                                            <span class="txt--bold"> - </span>
-                                            <span class="teknologi txt--bold">3D print</span>
-                                        </p>
-                                    </div>
-                                </div>
-                                <p>Mød Camilla, en sygeplejerskestuderende, der gør anatomi sjov og nemt at forstå med 3D-modeller skabt i FabLab. Glem kedelige bøger - her får du hands-on læring, der gør selv de sværeste koncepter lettere at forstå, både for studerende og patienter.</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col4-1 column__card">
-                    <div class="avatar-caption">
-                        <div class="avatar">
-                            <img src="assets/avatar_images/michael.webp" alt="Avatar">
+                            <p>Mød Camilla, en sygeplejerskestuderende, der gør anatomi sjov og nemt at forstå med 3D-modeller skabt i FabLab. Glem kedelige bøger - her får du hands-on læring, der gør selv de sværeste koncepter lettere at forstå, både for studerende og patienter.</p>
                         </div>
-                        <div class="avatar-caption__content">
-                            <div>
-                                <p class="txt--bold">Michael Angelo Johansen</p>
-                                <p>Fablab Manager</p>
-                            </div>
-                            <div>
-                                <a  class="txt--bold" href="tel:40878129">40 87 81 29</a>
-                                <a class="txt--bold" href="mailto:micj@ucl.dk">micj@ucl.dk</a>
-                            </div>
+                    </a>
+                </article>
+            </section>
+            <section class="col4 column__card spacing">
+                <article class="avatar-caption vertical avatar-caption--vertical">
+                    <div class="avatar">
+                        <img src="assets/avatar_images/michael.webp" alt="Avatar" loading="lazy">
+                    </div>
+                    <div class="avatar-caption__content">
+                        <div>
+                            <p class="txt--bold">Michael Angelo Johansen</p>
+                            <p>Fablab Manager</p>
+                        </div>
+                        <div>
+                            <a  class="txt--bold" href="tel:40878129">40 87 81 29</a>
+                            <a class="txt--bold" href="mailto:micj@ucl.dk">micj@ucl.dk</a>
                         </div>
                     </div>
-                    <div class="avatar-caption">
-                        <div class="avatar">
-                            <img src="assets/avatar_images/michael2.webp" alt="Avatar">
+                </article>
+                <article class="avatar-caption vertical avatar-caption--vertical">
+                    <div class="avatar">
+                        <img src="assets/avatar_images/michael2.webp" alt="Avatar" loading="lazy">
+                    </div>
+                    <div class="avatar-caption__content">
+                        <div>
+                            <p class="txt--bold">Michael Hviid</p>
+                            <p>FabLab tekniker</p>
                         </div>
-                        <div class="avatar-caption__content">
-                            <div>
-                                <p class="txt--bold">Michael Hviid</p>
-                                <p>FabLab tekniker</p>
-                            </div>
-                            <div>
-                                <p class="txt--bold">mhni@ucl.dk</p>
-                            </div>
+                        <div>
+                            <a class="txt--bold" href="mailto:mail">mhni@ucl.dk</a>
                         </div>
                     </div>
-                    <div class="avatar-caption">
-                        <div class="avatar">
-                            <img src="assets/avatar_images/mads.webp" alt="Avatar">
+                </article>
+                <article class="avatar-caption vertical avatar-caption--vertical">
+                    <div class="avatar">
+                        <img src="assets/avatar_images/mads.webp" alt="Avatar" loading="lazy">
+                    </div>
+                    <div class="avatar-caption__content">
+                        <div>
+                            <p class="txt--bold">Mads Nygaard</p>
+                            <p>FabLab tekniker</p>
                         </div>
-                        <div class="avatar-caption__content">
-                            <div>
-                                <p class="txt--bold">Mads Nygaard</p>
-                                <p>FabLab tekniker</p>
-                            </div>
-                            <div>
-                                <p class="txt--bold">many@ucl.dk</p>
-                            </div>
+                        <div>
+                            <a class="txt--bold" href="mailto:mail">many@ucl.dk</a>
                         </div>
                     </div>
-                </div>
-            </div>
+                </article>
+            </section>
         </div>
     </main>
     <footer></footer>

@@ -1,3 +1,5 @@
+/* <!-- Programmeret af Sabrin --> */
+
 /* Set the width of the side navigation to 250px */
 function OpenFilter() {
     document.getElementById("myfilter").style.minWidth = "25%";

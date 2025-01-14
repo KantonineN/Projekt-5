@@ -1,3 +1,5 @@
+/* <!-- Programmeret af Heidi --> */
+
 function Accordion() {
     const acc = document.getElementsByClassName("accordion__btn");
 
