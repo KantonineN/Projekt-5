@@ -21,6 +21,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="scripts/header-nikka.js"></script>
     <script src="scripts/modal-nikka.js" defer></script>
+    <script src="scripts/snackbar-nikka.js" defer></script>
 </head>
 <body>
     <header>
@@ -118,7 +119,7 @@
         </div>
         <!-- 3 Cards -->
         <section class="col">
-            <article class="col4-1">
+            <article class="col4">
                 <a class="card vertical shadow--card" href="workshops.html">
                     <div class="card__img--21¤9">
                         <img src="assets/images/workshops.webp" alt="Studerende der kigger på en 3D printer mens den arbejder"  loading="lazy">
@@ -261,11 +262,13 @@ Skriv også hvis du har brug for vejleding eller er selvkørende." required="req
                         </label>
                     </div>
                     <div class="col12">
-                        <input type="submit" value="Send">
+                        <input id="submit" type="submit" value="Send">
                     </div>
                 </form>
             </div>
         </div>
+        <!-- The Snackbar -->
+        <div id="snackbar">Some text some message..</div>
     </main>
     <footer></footer>
 </body>

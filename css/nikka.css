@@ -172,7 +172,7 @@ html, body {
     display: flex;
     flex-direction: column;
     gap: var(--spacing--xl);
-    margin-bottom: var(--spacing--xl);
+    /* margin-bottom: var(--spacing--xl); */
 }
 
 .header-xl {
@@ -647,6 +647,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
 
 .card img {
     height: 100%;
+    width: 100%;
     object-fit: cover;
 }
 
@@ -990,6 +991,14 @@ a .card {
 
 .card--responsive .card__content {
     width: 100%;
+}
+
+#snackbar {
+    visibility: hidden;
+}
+
+#snackbar.show {
+    visibility: visible;
 }
 
 

@@ -50,28 +50,26 @@
                     <button class="filter__btn btn--secondary" onclick="OpenFilter()">
                         <svg class="icon--md" focusable="false" aria-hidden="true"><use xlink:href="#filter"></use></svg>
                     </button>
-                    <div>
-                        <div id="myfilter" class="filter transition">
-                            <div class="filter__content">
-                                <a href="javascript:void(0)" class="filter__closebtn" onclick="CloseFilter()">&times;</a>
-                                <form id="filter-project">
-                                    <h2>Filter</h2>
-                                    <select id="edit-studie" class="table-filter" name="studie">
-                                        <option value="all" selected>Vælg studieretning</option>
-                                        <option value="Pædagog">Pædagog</option>
-                                        <option value="Sygeplejerske">Sygeplejerske</option>
-                                    </select>
-                                    <select id="edit-teknologi" class="table-filter" name="teknologi">
-                                        <option value="all" selected>Vælg teknologi</option>
-                                        <option value="3D print">3D print</option>
-                                        <option value="Laserskærer">Laserskærer</option>
-                                        <option value="Tekstil tryk">Tekstil tryk</option>
-                                    </select>
-                                </form>
-                            </div>
-                            <div class="filter__footer">
-                                <button class="btn--primary" onclick="FilterProjects()">Tilføj filter</button>
-                            </div>
+                    <div id="myfilter" class="filter transition">
+                        <div class="filter__content">
+                            <a href="javascript:void(0)" class="filter__closebtn" onclick="CloseFilter()">&times;</a>
+                            <form id="filter-project">
+                                <h2>Filter</h2>
+                                <select id="edit-studie" class="table-filter" name="studie">
+                                    <option value="all" selected>Vælg studieretning</option>
+                                    <option value="Pædagog">Pædagog</option>
+                                    <option value="Sygeplejerske">Sygeplejerske</option>
+                                </select>
+                                <select id="edit-teknologi" class="table-filter" name="teknologi">
+                                    <option value="all" selected>Vælg teknologi</option>
+                                    <option value="3D print">3D print</option>
+                                    <option value="Laserskærer">Laserskærer</option>
+                                    <option value="Tekstil tryk">Tekstil tryk</option>
+                                </select>
+                            </form>
+                        </div>
+                        <div class="filter__footer">
+                            <button class="btn--primary" onclick="FilterProjects()">Tilføj filter</button>
                         </div>
                     </div>
                 </div>
