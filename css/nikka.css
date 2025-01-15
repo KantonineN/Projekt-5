@@ -212,6 +212,7 @@ h2 {
 h3 {
     font-size: clamp(1.8rem,2.222vw,3.2rem);
     line-height: clamp(2.2rem,2.708vw,3.9rem);
+    margin-bottom: clamp(1rem, 0.8vw, 2rem);
 }
 
 h4 {
@@ -317,7 +318,6 @@ a:hover {
 .col3,
 .col2,
 .col1 {
-    gap: var(--spacing--lg) var(--spacing--md);
     width: 100%;
 }
 
@@ -432,6 +432,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
     display: flex;
     flex-direction: column;
     gap: var(--spacing--sm);
+    margin-bottom: var(--spacing--md);
 }
 
 .accordion {
@@ -942,7 +943,7 @@ a .card {
 .col12,
 .col8,
 .col6,
-.col4
+.col4,
 .col4-2,
 .col3 {
     grid-column: span 12;
