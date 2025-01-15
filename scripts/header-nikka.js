@@ -5,7 +5,7 @@ $(document).ready(function () {
     $("#svg-content").load("injects/svg.html");
 });
 $(document).ready(function () {
-    $("#svg-content").load("../injects/svg.html");
+    $("#svg-content--subfolder").load("../injects/svg.html");
 });
 
 /* Load header for large devices */
