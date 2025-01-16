@@ -21,7 +21,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="scripts/header-nikka.js"></script>
 </head>
-<body>
+<body class="contact-bg">
     <header>
         <div id="svg-content"></div>
         <div class="header-area">
@@ -45,9 +45,54 @@
             </div>
         </div>
     </header>
-    <main class="container spacing">
-        
+    <main class="container spacing col contact__wrapper">
+        <div class="col4-2 contact contact--left">
+            <div class="contact__wrapper--inner">
+                <div class="contact-item">
+                    <svg class="icon--md contact__icon" focusable="false" aria-hidden="true"><use xlink:href="#phone--filled"></use></svg>
+                    <div class="contact__content">
+                        <p class="contact__label">Ring til FabLab</p>
+                        <a href="tel:+4524375589">24 37 55 89</a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <svg class="icon--md contact__icon" focusable="false" aria-hidden="true"><use xlink:href="#location--filled"></use></svg>
+                    <div class="contact__content">
+                        <p class="contact__label">Adresse</p>
+                        <a href="https://maps.app.goo.gl/AxUuH22rUNVxYamF7" target="_blank">Seebladsgade 1<br>5000 Odense C.</a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <svg class="icon--md contact__icon" focusable="false" aria-hidden="true"><use xlink:href="#clock--filled"></use></svg>
+                    <div class="contact__content">
+                        <p class="contact__label">Åbningstider</p>
+                        <a href="#">Alle hverdage fra<br>kl. 08:00 - 16:00</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col4 contact contact--right">
+            <h3>Skriv til FabLab</h3>
+            <div class="contact__form__wrapper">
+                <form class="contact__form">
+                    <div class="contact__form__col2">
+                        <input id="name" type="text" name="name" autocomplete="on" placeholder="Fulde navn">
+                    </div>
+                    <div class="contact__form__col1">
+                        <input id="mail" type="text" name="email" placeholder="E-mail" autocomplete="on">
+                    </div>
+                    <div class="contact__form__col1">
+                        <input id="phone" type="tel" name="phone" placeholder="Telefon" autocomplete="on">
+                    </div>
+                    <div class="contact__form__col2">
+                        <textarea id="subject" name="subject" placeholder="Skriv din besked her" required="required" style="height:15vh"></textarea>
+                    </div>
+                    <div class="contact__form__col2">
+                        <input type="submit" value="Send">
+                    </div>
+                </form>
+            </div>
+        </div>
     </main>
-    <footer></footer>
 </body>
 </html>

@@ -44,7 +44,12 @@
   width: auto;
 }
 
-/*filtre overlay*/
+/* Hvorfor har du programmeret de næste 2 classes? Vi bruger ikke overlays i projektet.
+Du bruger heller ikke BEM naming som vi skal. Jeg havde ellers forklaret det for dig.
+Du bruger det kun i de classes ovenover her som er de classes jeg havde navngivet for dig.
+Jeg har også været nødt til at rette din knap for at åbne filteret så det passer med prototypen i Figma.
+Du bruger hell */
+
 /* Filter Overlay */
 .filter-overlay {
   position: fixed;
@@ -69,6 +74,7 @@
   overflow: auto;
 }
 
+/* Denne class bliver heller ikke brugt nogen steder */
 /* Close Button */
 .close-btn {
   position: absolute;
