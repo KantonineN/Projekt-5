@@ -1,6 +1,7 @@
+@charset "UTF-8";
+
 /* <!-- Programmeret af Nikka --> */
 
-@charset "UTF-8";
 /* CSS dokument */
 
 :root {
@@ -191,7 +192,6 @@ h1, h2, h3, h4, .hl1, .hl2, .hl3, .hl4 {
     font-family: var(--font-family--headline);
     font-weight: 800;
     margin-bottom: 0;
-    word-break: break-word;
 }
 
 h1, h2, h3, .hl1, .hl2, .hl3 {
@@ -1058,7 +1058,6 @@ a .card {
     font-size: clamp(1.6rem,1.528vw,2.2rem);
     line-height: clamp(2rem,1.875vw,2.7rem);
     margin-bottom: 0;
-    word-break: break-word;
 }
 
 .contact__form {
