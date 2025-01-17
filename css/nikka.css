@@ -322,6 +322,20 @@ a:hover {
     width: 100%;
 }
 
+.col12,
+.col8,
+.col6,
+.col4,
+.col4-2,
+.col3 {
+    grid-column: span 12;
+}
+
+.col2,
+.col1 {
+    grid-column: span 6;
+}
+
 /* Component styling */
     /* Making images responsive */
 .responsive-img {
@@ -936,20 +950,6 @@ a .card {
     flex-direction: column;
 }
 
-.col12,
-.col8,
-.col6,
-.col4,
-.col4-2,
-.col3 {
-    grid-column: span 12;
-}
-
-.col2,
-.col1 {
-    grid-column: span 6;
-}
-
 .carousel__btn__icon {
     height: 16px;
     width: 16px;
@@ -1084,26 +1084,6 @@ a .card {
     width: 100%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Small device */
 @media only screen and (min-width: 576px) {
     .header .row,
@@ -1116,20 +1096,17 @@ a .card {
 @media only screen and (min-width: 768px) {
     .col12,
     .col8,
-    .col6 {
+    .col6,
+    .col4,
+    .col4-2 {
         grid-column: span 12;
     }
     .col3 {
         grid-column: span 6;
     }
-    .col2,
-    .col4 {
+    .col2 {
         grid-column: span 4;
     }
-    .col4-2 {
-        grid-column: 3 / span 4;
-    }
-
     .col1 {
         grid-column: span 3;
     }
@@ -1154,24 +1131,19 @@ a .card {
     .filter-area {
         justify-content: flex-end;
     }
-    
     .filter {
         right: 0;
         left:auto;
     }
-
     .card--responsive .card__img--1¤1 {
         width: 100%;
     }
-    
     .card--responsive .card__content {
         width: 100%;
     }
-
     .contact__form__col1 {
         grid-column: span 2;
     }
-    
     .contact__form__col2 {
         grid-column: span 2;
     }
@@ -1224,32 +1196,25 @@ a .card {
     .filter-area {
         justify-content: start;
     }
-    
     .filter {
         left: 0;
         right: auto;
     }
-
     .btn__area {
         align-items: flex-start;
     }
-
     .card--responsive {
         flex-direction: row;
-    }
-        
+    }    
     .card--responsive .card__img--1¤1 {
         width: 25%;
     }
-    
     .card--responsive .card__content {
         width: 75%;
     }
-
     .contact__form__col1 {
         grid-column: span 1;
     }
-    
     .contact__form__col2 {
         grid-column: span 2;
     }
@@ -1305,7 +1270,6 @@ a .card {
     .filter-area {
         justify-content: start;
     }
-    
     .filter {
         left: 0;
         right: auto;
@@ -1313,23 +1277,18 @@ a .card {
     .btn__area {
         align-items: flex-start;
     }
-
     .card--responsive {
         flex-direction: row;
-    }
-        
+    }   
     .card--responsive .card__img--1¤1 {
         width: 25%;
     }
-    
     .card--responsive .card__content {
         width: 75%;
     }
-
     .contact__form__col1 {
         grid-column: span 1;
     }
-    
     .contact__form__col2 {
         grid-column: span 2;
     }
