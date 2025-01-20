@@ -1240,7 +1240,7 @@ a .card {
         grid-column: span 3;
     }
     .col2 {
-        grid-column: span 2;;
+        grid-column: span 2;
     }
     .col1 {
         grid-column: span 1;
