@@ -464,7 +464,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
     position: relative;
     width: 100%;
     display: flex;
-    padding: 12px;
+    padding: var(--spacing--sm);
 
     border: none;
     background-color: var(--color__surface__secondary--1);
